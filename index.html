@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Exemplo CSS GRID</title>
+        <style>
+            .menu 
+            {
+                border: 1px solid green;
+                grid-area: menu;
+            }
+            .header 
+            {
+                border: 1px solid green;
+                grid-area: header;
+            }
+            .card1 
+            {
+                border: 1px solid green;
+                grid-area: card1;
+            }
+            .card2 
+            {
+                border: 1px solid green;
+                grid-area: card2;
+            }
+            .footer 
+            {
+                border: 1px solid green;
+                grid-area: footer;
+            }
+            main {
+                display: grid;
+                grid-template-areas:
+                "menu header header"
+                "menu card1 card2"
+                "footer footer footer";
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="menu">
+                <p>MENU</p>       
+            </div>
+            <div class="header">
+                <p>HEADER</p>          
+            </div>
+            <div class="card1">
+                <p>CARD 1</p>        
+            </div>
+            <div class="card2">
+                <p>CARD 2</p>           
+            </div>
+            <div class="footer">
+                <p>FOOTER</p>          
+            </div>
+        </main>
+    </body>
+</html>
